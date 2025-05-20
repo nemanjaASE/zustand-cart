@@ -1,54 +1,51 @@
-# React + TypeScript + Vite
+# 🛒 Simple E-Commerce App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple e-commerce application built with React. It features a basic shopping cart implemented using [Zustand](https://github.com/pmndrs/zustand) for state management.
 
-Currently, two official plugins are available:
+## 🚀 Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [React](https://reactjs.org/) – Frontend library
+- [Zustand](https://github.com/pmndrs/zustand) – Lightweight state management
+- [Vite](https://vitejs.dev/) – Fast build and development tool
+- [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework
 
-## Expanding the ESLint configuration
+## ✅ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Display list of products
+- Add items to cart
+- Remove items from cart
+- View total price
+- Manage cart state with Zustand store
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📦 Getting Started
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/nemanjaASE/zustand-cart.git
+cd zustand-cart
+```
+2. Install dependencies:
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3. Start the development server:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm run dev
 ```
+
+The app will be running at http://localhost:5173 (or a different port if 5173 is in use).
+## 🧠 Notes
+
+This project uses Zustand as a simpler alternative to Redux for local state management. It's ideal for small to medium projects where complex middleware isn't necessary.
+
+## 🖼️ Screenshot
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e371d4d6-3d95-4bd3-9918-b907f639f395" width="400" />
+</p>
+
+
